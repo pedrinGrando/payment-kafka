@@ -1,4 +1,5 @@
-FROM ubuntu:latest
-LABEL authors="usertqi"
+FROM openjdk:17
+ARG JAR_FILE=target/*.jar
+COPY ${JAR_FILE} app.jar
 
-ENTRYPOINT ["top", "-b"]
+ENTRYPOINT ["java", "-jar", "app.jar"]
