@@ -26,7 +26,7 @@ public class StringProducerService {
 //                                success.getRecordMetadata().offset());
 //                    }
 //                },
-//                error -> log.error("Error sending message", error)
+//                error -> log.error("Error sending message", error)4444
 //        );
     }
 
